@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routine Checklist</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Title</h1>
-    <button>Click me</button>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Daily rhythm</p>
+          <h1>Routine checklist</h1>
+        </div>
+        <button class="ghost-btn" id="resetBtn">Reset</button>
+      </header>
+
+      <section class="hero-card">
+        <div>
+          <p class="meta-label">Today</p>
+          <h2 id="todayDate">Monday, Oct 24</h2>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-ring">
+            <span id="progressPercent">0%</span>
+          </div>
+        </div>
+      </section>
+
+      <main class="checklist-panel">
+        <div class="panel-header">
+          <h3>Focus routine</h3>
+          <span id="progressText">0 of 6 complete</span>
+        </div>
+
+        <ul class="checklist" id="checklist">
+          <li class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="task-copy">
+                <strong>Morning stretch</strong>
+                <small>5 min reset</small>
+              </span>
+            </label>
+          </li>
+
+          <li class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="task-copy">
+                <strong>Hydrate</strong>
+                <small>Drink a full glass of water</small>
+              </span>
+            </label>
+          </li>
+
+          <li class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="task-copy">
+                <strong>Review priorities</strong>
+                <small>Pick your top 3 wins</small>
+              </span>
+            </label>
+          </li>
+
+          <li class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="task-copy">
+                <strong>Deep work session</strong>
+                <small>Focus block for 25–45 min</small>
+              </span>
+            </label>
+          </li>
+
+          <li class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="task-copy">
+                <strong>Movement break</strong>
+                <small>Walk, stretch, or reset</small>
+              </span>
+            </label>
+          </li>
+
+          <li class="task-item">
+            <label>
+              <input type="checkbox" />
+              <span class="task-copy">
+                <strong>Evening reset</strong>
+                <small>Plan tomorrow and unplug</small>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
